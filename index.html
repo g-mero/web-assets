@@ -6,10 +6,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
+    <style>
+        body {
+            background-color: #141019;
+            background: radial-gradient(at 50% -20%, #908392, #0d060e) fixed;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: aliceblue;
+        }
+
+        .container a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container a:hover {
+            color: turquoise;
+        }
+
+        .container header {
+            font-size: 6rem;
+            text-align: center;
+            border-bottom: turquoise solid 1rem;
+        }
+
+        .container .content {
+            font-size: 2rem;
+            margin: 2rem;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 1rem;
+            border-radius: .5rem;
+        }
+
+        a.backhome {
+            font-size: 3rem;
+            background-color: aquamarine;
+            color: white;
+            padding: .7rem;
+            border-radius: 1rem;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Welcome</h1>
+    <div class="container">
+        <header>Gmero的私人资源站</header>
+        <div class="content">
+           这是私人站点，有问题通过邮箱联系站长：
+            <a href="mailto:gmero@foxmail.com">gmero@foxmail.com</a>
+        </div>
+        <a class="backhome" href="http://www.gmero.com" target="_blank" rel="noopener noreferrer">
+            返回主页
+        </a>
+    </div>
+
 </body>
 
 </html>
